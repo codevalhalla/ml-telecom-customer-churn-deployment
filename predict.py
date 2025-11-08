@@ -3,6 +3,8 @@
 
 import pickle
 
+from typing import Dict, Any
+
 import uvicorn
 
 from fastapi import FastAPI
@@ -18,7 +20,7 @@ def predict_single(customer):
 
 
 @app.post("/predict")
-def predict(customer):
+def predict(customer:Dict[str,Any]):
     prob = predict_single(customer)
     
     return {

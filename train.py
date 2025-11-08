@@ -72,10 +72,11 @@ def train_model(df):
 def save_model(pipeline, output_file):
     with open(output_file, 'wb') as f_out:
         pickle.dump(pipeline, f_out)
+    print(f'model saved to {output_file}')
 
 
 df = load_data()
 pipeline = train_model(df)
 save_model(pipeline,'model.bin')
 
-print('model saved to model.bin')
+

@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 import pickle
 
 with open('model.bin','rb') as f_in:

@@ -1,7 +1,7 @@
 [project]
 name = "ml-telecom-customer-churn-deployment"
 version = "0.1.0"
-description = "Add your description here"
+description = "Churn Prediction Service"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
